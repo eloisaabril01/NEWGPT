@@ -11,7 +11,7 @@ export async function POST(request: Request) {
     const userParam = userId ? `&userId=${userId}` : ""
 
     // Make the request from the server side to avoid CORS issues
-    const response = await fetch(`https://gpt.navsharma.com/prompt?text=${encodedText}${userParam}`, {
+    const response = await fetch(`https://magicloops.dev/api/loop/90ab1a07-ebec-4ea6-91dd-6f5d67f61be1/run?text=${encodedText}${userParam}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
